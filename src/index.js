@@ -3,11 +3,17 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Library1 from './chapter03/Library1';
+import StudentList from './chapter03/StudentList';
+import ConfirmDialog from './chapter04/ConfirmDialog';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    {/* <Library1/> */}
+    {/* <StudentList/> */}
+    <ConfirmDialog />
   </React.StrictMode>
 );
 
