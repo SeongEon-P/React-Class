@@ -13,6 +13,7 @@ import BoardList from './chapter05/BoardList';
 import NotificationList from './chapter06/NotificationList';
 import Counter from './chapter07/Counter';
 import Info from './chapter07/Info';
+import Average from './chapter07/Average';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // setInterval( () => {
@@ -27,8 +28,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
       {/* <CommentList /> */}
       {/* <BoardList /> */}
       {/* <NotificationList /> */}
-      {<Counter />}
+      {/* {<Counter />} */}
       {/* {<Info />} */}
+      {<Average />}
     </React.StrictMode>
   );
 // }, 1000)

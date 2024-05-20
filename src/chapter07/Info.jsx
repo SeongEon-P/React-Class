@@ -1,34 +1,57 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useReducer, useState } from "react";
+
+function reducer(state, action){
+    return{
+        ...state,
+        [action.name]:action.value
+    };
+}
+
 
 function Info(props){
-    const [name, setName]=useState('');
-    const [nickname, setNickname]=useState('');
-
-    useEffect( () => {
-        console.log('렌더링이 완료됨');
-        console.log({name, nickname});
-        return () => {
-            console.log('cleanup');
-            console.log(name);
-        }
+    const [state, dispatch]=useReducer(reducer,{
+        name:'',
+        nickname:'',
+        address:'',
+        phone:''
     });
-
-    const onChangeName= e =>{
-        setName(e.target.value);
+    const {name, nickname, address, phone}=state;
+    const onChange= e =>{
+        dispatch(e.target);
     };
+    // const [name, setName]=useState('');
+    // const [nickname, setNickname]=useState('');
 
-    const onChangeNickname= e =>{
-        setNickname(e.target.value);
-    };
+    // useEffect( () => {
+    //     console.log('렌더링이 완료됨');
+    //     console.log({name, nickname});
+    //     return () => {
+    //         console.log('cleanup');
+    //         console.log(name);
+    //     }
+    // },[name]);
+
+    // const onChangeName= e =>{
+    //     setName(e.target.value);
+    // };
+
+    // const onChangeNickname= e =>{
+    //     setNickname(e.target.value);
+    // };
 
     return(
         <div>
             <div>
-                <input value={name} onChange={onChangeName} />
-                <input value={nickname} onChange={onChangeNickname} />
+                <input name="name" value={name} onChange={onChange} />
+                <input name="nickname" value={nickname} onChange={onChange} />
+                <input name="address" value={address} onChange={onChange} />
+                <input name="phone" value={phone} onChange={onChange} />
             </div>
             <div><b>이름 : </b>{name}</div>
             <div><b>닉네임 : </b>{nickname}</div>
+            <div><b>주소 : </b>{address}</div>
+            <div><b>전화번호 : </b>{phone}</div>
+
         </div>
         
     )
