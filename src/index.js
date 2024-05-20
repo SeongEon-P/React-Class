@@ -18,6 +18,9 @@ import Accommodate from './chapter07/Accommodate';
 import Say from './chapter08/Say';
 import Toggle from './chapter08/Toggle';
 import Toggle2 from './chapter08/Toggle2';
+import ConfirmButton from './chapter08/ConfirmButton';
+import ConfirmButton2 from './chapter08/ConfirmButton2';
+import EventPracice from './chapter08/EventPractice';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // setInterval( () => {
@@ -38,7 +41,10 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
       {/* <Accommodate/> */}
       {/* <Say/> */}
       {/* <Toggle /> */}
-      <Toggle2 />
+      {/* <Toggle2 /> */}
+      {/* <ConfirmButton /> */}
+      {/* <ConfirmButton2 /> */}
+      <EventPracice />
 
     </React.StrictMode>
   );
