@@ -31,7 +31,7 @@ function Average(props){
         setList(nextList);
         setNumber('');
         inputEl.current.focus();
-    },[number, list]); // number 혹은 list가 변경될 때만 함수 생성
+    },[number, list]); // number 혹은 list가 변경될 때만 함수 생성.
 
     const avg=useMemo( () => getAverage(list), [list]);
   

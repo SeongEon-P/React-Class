@@ -14,6 +14,7 @@ import NotificationList from './chapter06/NotificationList';
 import Counter from './chapter07/Counter';
 import Info from './chapter07/Info';
 import Average from './chapter07/Average';
+import Accommodate from './chapter07/Accommodate';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // setInterval( () => {
@@ -30,7 +31,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
       {/* <NotificationList /> */}
       {/* {<Counter />} */}
       {/* {<Info />} */}
-      {<Average />}
+      {/* {<Average />} */}
+      {<Accommodate/>}
     </React.StrictMode>
   );
 // }, 1000)
