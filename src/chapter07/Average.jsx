@@ -34,7 +34,7 @@ function Average(props){
     },[number, list]); // number 혹은 list가 변경될 때만 함수 생성
 
     const avg=useMemo( () => getAverage(list), [list]);
-
+  
     return (
         <div>
             <input value={number} onChange={onChange} ref={inputEl}/>
