@@ -17,6 +17,7 @@ import Average from './chapter07/Average';
 import Accommodate from './chapter07/Accommodate';
 import Say from './chapter08/Say';
 import Toggle from './chapter08/Toggle';
+import Toggle2 from './chapter08/Toggle2';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // setInterval( () => {
@@ -36,7 +37,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
       {/* <Average /> */}
       {/* <Accommodate/> */}
       {/* <Say/> */}
-      <Toggle/>
+      {/* <Toggle /> */}
+      <Toggle2 />
 
     </React.StrictMode>
   );
