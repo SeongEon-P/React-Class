@@ -7,7 +7,10 @@ function Info(props){
     useEffect( () => {
         console.log('렌더링이 완료됨');
         console.log({name, nickname});
-
+        return () => {
+            console.log('cleanup');
+            console.log(name);
+        }
     });
 
     const onChangeName= e =>{
