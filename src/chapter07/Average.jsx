@@ -29,8 +29,8 @@ function Average(props){
     const onInsert= useCallback(e =>{
         const nextList=list.concat(parseInt(number));
         setList(nextList);
-        setNumber('');
-        inputEl.current.focus();
+        setNumber(''); //setNumber('')를 호출하여 number 상태를 빈 문자열로 초기화합니다.
+        inputEl.current.focus(); // inputEl.current.focus()를 호출하여 입력 필드에 포커스를 다시 맞춥니다.
     },[number, list]); // number 혹은 list가 변경될 때만 함수 생성.
 
     const avg=useMemo( () => getAverage(list), [list]);

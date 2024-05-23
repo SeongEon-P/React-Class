@@ -21,6 +21,8 @@ import Toggle2 from './chapter08/Toggle2';
 import ConfirmButton from './chapter08/ConfirmButton';
 import ConfirmButton2 from './chapter08/ConfirmButton2';
 import EventPracice from './chapter08/EventPractice';
+import Greeting from './chapter09/Greeting';
+import LoginControl from './chapter09/LoginControl';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // setInterval( () => {
@@ -44,7 +46,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
       {/* <Toggle2 /> */}
       {/* <ConfirmButton /> */}
       {/* <ConfirmButton2 /> */}
-      <EventPracice />
+      {/* <EventPracice /> */}
+      {/* <Greeting /> */}
+      <LoginControl />
 
     </React.StrictMode>
   );
