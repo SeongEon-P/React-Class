@@ -23,11 +23,14 @@ function LoginButton(props){
             setIsLoggedIn(false);
         }
         let button;
-        if(isLoggedIn){
-            button=<LogoutButton onClick={handleLogoutClick} />;
-        }else{
-            button=<LoginButton onClick={handleLoginClick} />;
-        }
+        {button=isLoggedIn
+            ?<LogoutButton onClick={handleLogoutClick}/>
+            :<LoginButton onClick={handleLoginClick}/>
+        // if(isLoggedIn){
+        //     button=<LogoutButton onClick={handleLogoutClick} />;
+        // }else{
+        //     button=<LoginButton onClick={handleLoginClick} />;
+        // }
         return(
             <div>
                 <Greeting isLoggedIn={isLoggedIn} />
@@ -35,4 +38,32 @@ function LoginButton(props){
             </div>
         )
     }
+}
+ function WarningBanner(props){
+    if (!props.warning){
+        return null; //렌더링되지 않음
+    }
+    return (
+        <div>경고!</div>
+    );
+ }
+
+ function MainPage(props){
+    const [showWarning, setShowWarning] = useState(false);
+
+    const handleToggleClick = () => {
+        setShowWarning(prevShowWarning => !prevShowWarning);
+    }
+
+    return (
+        <div>
+            <WarningBanner warning={showWarning} />
+            <button onClick={handleToggleClick}>
+                {showWarning ? '감추기' : '보이기'}
+            </button>
+        </div>
+    );
+ }
+
+
     export default LoginControl;
