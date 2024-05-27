@@ -1,10 +1,11 @@
+import React from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
     padding: 1rem;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: baseline;
     justify-content: flex-start;
     background-color: lightgrey;
 `;

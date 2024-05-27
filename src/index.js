@@ -33,6 +33,7 @@ import MainTest from './chapter14/MainTest';
 import MainContent from './chapter14/MainContent';
 import DarkOrLight from './chapter14/DarkOrLight';
 import MainPage1 from './chapter15/MainPage1';
+import Blocks from './chapter15/Blocks';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // setInterval( () => {
@@ -68,7 +69,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
       {/* {<MainTest />} */}
       {/* {<MainContent />} */}
       {/* {<DarkOrLight />} */}
-      {<MainPage1 />}
+      {/* {<MainPage1 />} */}
+      {<Blocks />}
 
     </React.StrictMode>
   );
