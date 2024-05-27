@@ -26,6 +26,7 @@ import LoginControl from './chapter09/LoginControl';
 import LandingPage from './chapter09/LandingPage';
 import NumberList from './chapter10/NumberList';
 import StudentItemList from './chapter10/StudentItemList';
+import Calculator from './chapter12/Calculator';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // setInterval( () => {
@@ -54,7 +55,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
       {/* <LoginControl /> */}
       {/* <LandingPage /> */}
       {/* <NumberList /> */}
-      <StudentItemList />
+      {/* <StudentItemList /> */}
+      <Calculator />
 
     </React.StrictMode>
   );
