@@ -1,7 +1,7 @@
 import React from "react";
 import FancyBorder from "./FancyBorder";
 
-function Dialog(props){
+function Dialog2(props){
     return(
         <FancyBorder color="blue">
             <h1 className="Dialog-title">{props.title}</h1>
@@ -10,4 +10,4 @@ function Dialog(props){
         </FancyBorder>
     )
 }
-export default Dialog;
+export default Dialog2;

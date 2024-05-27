@@ -27,6 +27,12 @@ import LandingPage from './chapter09/LandingPage';
 import NumberList from './chapter10/NumberList';
 import StudentItemList from './chapter10/StudentItemList';
 import Calculator from './chapter12/Calculator';
+import WelcomeDialog from './chapter13/WelcomeDialog';
+import ProfileCard from './chapter13/ProfileCard';
+import MainTest from './chapter14/MainTest';
+import MainContent from './chapter14/MainContent';
+import DarkOrLight from './chapter14/DarkOrLight';
+import MainPage1 from './chapter15/MainPage1';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // setInterval( () => {
@@ -56,7 +62,13 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
       {/* <LandingPage /> */}
       {/* <NumberList /> */}
       {/* <StudentItemList /> */}
-      <Calculator />
+      {/* <Calculator /> */}
+      {/* {<WelcomeDialog />} */}
+      {/* {<ProfileCard />} */}
+      {/* {<MainTest />} */}
+      {/* {<MainContent />} */}
+      {/* {<DarkOrLight />} */}
+      {<MainPage1 />}
 
     </React.StrictMode>
   );
